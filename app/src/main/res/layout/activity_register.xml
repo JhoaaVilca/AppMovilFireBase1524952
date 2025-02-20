@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:background="@drawable/register"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_margin="60dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/lblApellidosNombres"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Apellidos y Nombres"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/txtApellidosNombresRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Ingrese Apellidos y Nombres:"
+        android:inputType="text"
+        android:layout_marginTop="0.5dp"
+        android:textColorHint="@color/white"
+        android:shadowColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/lblCorreo"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Correo Electrónico:"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/txtCorreoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Ingrese Correo Electrónico"
+        android:inputType="text"
+        android:layout_marginTop="0.5dp"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:id="@+id/lblTelefono"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Telefono:"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/txttelefonoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Ingrese Telefono"
+        android:inputType="number"
+        android:layout_marginTop="0.5dp"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:id="@+id/lblContraseña"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Contraseña:"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/txtContraseñaRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Ingrese Contraseña"
+        android:inputType="numberPassword"
+        android:layout_marginTop="0.5dp"
+        android:textColorHint="@color/white"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/btnRegistrarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnCancelarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/btnLimpiarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Limpiar" />
+
+    </GridLayout>
+</LinearLayout>

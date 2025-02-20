@@ -13,41 +13,32 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
         });
+        Button btncancelar = findViewById(R.id.btnCancelarRegister);
+        Button btnregister = findViewById(R.id.btnRegistrarRegister);
+        Button btnlimpiar = findViewById(R.id.btnLimpiarRegister);
 
-        //Iniciar Objetos apra cada control en xml - java - xml
+        EditText txtnombreapellidos = findViewById(R.id.txtApellidosNombresRegister);
+        EditText txtcorreo = findViewById(R.id.txtCorreoRegister);
+        EditText txttelefono = findViewById(R.id.txttelefonoRegister);
+        EditText txtcontraseña = findViewById(R.id.txtContraseñaRegister);
 
-        Button btnLogin = findViewById(R.id.btnlogin);
-        TextView lblregistrate = findViewById(R.id.lblregistrate);
-        TextView lblresetpass = findViewById(R.id.lblResetPass);
-        EditText txtEmail = findViewById(R.id.txtEmailLogin);
-        EditText txtPassLogin = findViewById(R.id.txtPassLogin);
-
-        //TEXTVIEW lblregistrate debe abrir view -> Registrate
-
-        lblregistrate.setOnClickListener(new View.OnClickListener() {
+        btncancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent conectar = new Intent(  MainActivity.this, Register.class );
-                startActivity(conectar);
-
-            }
-        });
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent conectar = new Intent(  MainActivity.this, menu.class );
+                Intent conectar = new Intent(  Register.this, MainActivity.class );
                 startActivity(conectar);
 
             }
