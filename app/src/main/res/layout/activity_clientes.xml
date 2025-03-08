@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clientes"
+    android:orientation="vertical"
+    android:background="#0046a0">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLIENTES"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="140dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnregistracliente"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:src="@drawable/clientes2"
+                android:backgroundTint="#959799"
+                app:tint="@android:color/white"
+                android:layout_marginEnd="30dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnEditarcliente"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:backgroundTint="#959799"
+                app:tint="@android:color/white"
+                android:layout_marginEnd="30dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnEliminarcliente"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:backgroundTint="#959799"
+                app:tint="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTA DE CLIENTES"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/white">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstCredenciales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:backgroundTint="#dddddd"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

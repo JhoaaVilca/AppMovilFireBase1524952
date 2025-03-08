@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1019231334883",
+    "firebase_url": "https://appmovil1524952-default-rtdb.firebaseio.com",
+    "project_id": "appmovil1524952",
+    "storage_bucket": "appmovil1524952.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019231334883:android:975033f8e37ad90264f0d6",
+        "android_client_info": {
+          "package_name": "com.example.appmovil1524952"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4HYq8onwPF9WKeKlSabgJbjq_p7KSuIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
