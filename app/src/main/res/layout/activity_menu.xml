@@ -57,7 +57,7 @@
                     android:id="@+id/btnclientess"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/cliente" />
+                    android:src="@drawable/clientess" />
 
                 <TextView
                     android:layout_width="wrap_content"
